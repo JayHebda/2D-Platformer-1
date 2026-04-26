@@ -29,6 +29,11 @@ public class HealthComponent : MonoBehaviour
             invincibility = true;
             StartCoroutine(ResetInvincibility(3));
         }
+
+        if (currentHealth <= 0)
+        {
+            GetComponent<SceneOpener>().OpenScene();
+        }
     }
 
     IEnumerator ResetInvincibility(float resetTime)
