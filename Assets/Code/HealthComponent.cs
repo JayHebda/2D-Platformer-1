@@ -1,10 +1,15 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthComponent : MonoBehaviour
 {
     public int maxHealth = 100;
+
+    [Header("Ustawienia Obra¿eñ")]
+    public float invincibilityDuration = 0.2f; 
+
     private float currentHealth;
     private bool invincibility;
 
@@ -17,22 +22,24 @@ public class HealthComponent : MonoBehaviour
     private void Start()
     {
         currentHealth = maxHealth;
-        OnHealthInitialized?.Invoke(currentHealth);  
+        OnHealthInitialized?.Invoke(currentHealth);
     }
-    
+
     public void ReceiveDamage(float amount)
     {
-        if(!invincibility)
+        if (!invincibility)
         {
             currentHealth -= amount;
             OnHealthChanged?.Invoke(currentHealth, amount);
             invincibility = true;
-            StartCoroutine(ResetInvincibility(3));
+
+            StartCoroutine(ResetInvincibility(invincibilityDuration));
         }
 
         if (currentHealth <= 0)
         {
-            GetComponent<SceneOpener>().OpenScene();
+            PlayerPrefs.SetString("LastPlayedLevel", SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("EndGameScene");
         }
     }
 
@@ -46,6 +53,5 @@ public class HealthComponent : MonoBehaviour
     {
         currentHealth += amount;
         OnHealthChanged?.Invoke(currentHealth, amount);
-        //Debug.Log(currentHealth);
     }
 }

@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: Woda
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 21300000, guid: 5dcdbf09e0f37904b87f034eb6c4c57a, type: 3}
+  - {fileID: 21300000, guid: 918f1345b6c6e444cb5a08cfeb4aff9c, type: 3}
+  - {fileID: 21300000, guid: d20570590a716fd42a1c382d60423688, type: 3}
+  - {fileID: 21300000, guid: 58e0925da8cfe36448917bf2d2d3e64a, type: 3}
+  - {fileID: 21300000, guid: ad92d4d451d30a041b5d0552b9a05ea4, type: 3}
+  - {fileID: 21300000, guid: 29f4212ebba569947a818d35b5e08566, type: 3}
+  - {fileID: 21300000, guid: c57473b736e20d7479aff3d8d62560ac, type: 3}
+  - {fileID: 21300000, guid: a2bd1095a0c37dd4ebd6fc5710086b83, type: 3}
+  - {fileID: 21300000, guid: 45db523b14ceaa34c9717e402e357ad4, type: 3}
+  - {fileID: 21300000, guid: 7f25766221592b44184b4b961e3edc07, type: 3}
+  - {fileID: 21300000, guid: 50eb1bb8550fd95488a29a2965df4085, type: 3}
+  - {fileID: 21300000, guid: 31771b71cba63db4a925fe1ce3d4e66e, type: 3}
+  - {fileID: 21300000, guid: ed1eb9b40477a984eb9f6fc66f2183b7, type: 3}
+  - {fileID: 21300000, guid: 229cff93f190999498083f0564016eaa, type: 3}
+  - {fileID: 21300000, guid: 1d95ef39513fd804fa6901fd5e6df59d, type: 3}
+  - {fileID: 21300000, guid: 32ef17e661f23a141ac76b5024db48d9, type: 3}
+  - {fileID: 21300000, guid: 775e19e9c1a0dc64ab690998f273ba79, type: 3}
+  m_MinSpeed: 7
+  m_MaxSpeed: 7
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0
